@@ -1,0 +1,65 @@
+.button
+  box-sizing border-box
+  display inline-block
+  padding 9px 17px
+  font-size 18px
+  border 3px solid color-body
+  transition all 0.3s
+  @media (max-width: 1360px)
+    font-size 14px
+    border-width 2px
+    padding 10px 18px
+  &_accent
+    background-color color-accent-active
+    border-color color-accent-active
+    &:hover
+      background-color color-on-hover
+      border-color color-on-hover
+    &:disabled
+      background-color color-picked
+      border-color color-picked
+      color color-dark-grey
+  &_accent-alt
+    border-color color-accent-active
+    &:hover
+      background-color color-on-hover
+    &:disabled
+      border-color color-picked
+      color color-dark-grey
+  &_secondary
+    border-color color-grey
+    background-color color-grey
+    &:hover
+      background-color color-light-grey
+      border-color color-light-grey
+    &:disabled
+      border-color color-dark-grey-2
+      background-color color-dark-grey-2
+      color color-dark-grey
+  &_ghost
+    border-color transparent
+    background-color transparent
+  &_cross
+    &:before
+      width 10px
+      height 10px
+      background url(../img/cross.svg) no-repeat
+  &_link
+    &:before
+      width 14px
+      height 14px
+      background url(../img/link.svg) no-repeat
+  &_with-icon
+    position relative
+    &:after
+      content ""
+      display inline-block
+      width 20px
+    &:before
+      content ""
+      position absolute
+      top 50%
+      right 17px
+      transform translateY(-50%)
+      display block
+      background-size contain
