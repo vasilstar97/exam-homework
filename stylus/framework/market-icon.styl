@@ -1,0 +1,13 @@
+$marketIcons = (boots building calendar clothes lux profile)
+
+.market-icon
+  display inline-block
+  width 48px
+  height 48px
+  background-size contain
+  background-position 50% 50%
+  &:disabled
+    filter grayscale(100%)
+  for $icon in $marketIcons
+    &_{$icon}
+        background-image url(../img/icon/market/$icon.svg)

@@ -9,16 +9,16 @@ $activeIcons = (bookmark delete more-horizontal notification qa search)
   background-size contain
 
 for $icon in $normalIcons
-  .service-icon-{$icon}
+  .service-icon_{$icon}
     &:before
       background-image url(../img/icon/service/$icon/normal.svg)
 
 for $icon in $hoverIcons
-  .service-icon-{$icon}
+  .service-icon_{$icon}
     &:hover:before
       background-image url(../img/icon/service/$icon/hover.svg)
 
 for $icon in $activeIcons
-  .service-icon-{$icon}
+  .service-icon_{$icon}
     &:active:before
       background-image url(../img/icon/service/$icon/active.svg)
