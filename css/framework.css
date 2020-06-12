@@ -80,16 +80,6 @@
   border-color: transparent;
   background-color: transparent;
 }
-.button_cross:before {
-  width: 10px;
-  height: 10px;
-  background: url("../img/cross.svg") no-repeat;
-}
-.button_link:before {
-  width: 14px;
-  height: 14px;
-  background: url("../img/link.svg") no-repeat;
-}
 .button_with-icon {
   position: relative;
 }
@@ -108,6 +98,125 @@
           transform: translateY(-50%);
   display: block;
   background-size: contain;
+}
+.page {
+  font-family: Roboto;
+  font-size: 20px;
+  line-height: 20px;
+}
+.page_title {
+  font-weight: 600;
+}
+.page_subtitle {
+  font-weight: 400;
+}
+h1 {
+  font-family: Roboto;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: -2%;
+}
+@media (max-width: 1360px) {
+  h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+h2 {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -2%;
+}
+@media (max-width: 1360px) {
+  h2 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+button {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+}
+@media (max-width: 1360px) {
+  button {
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
+.caption {
+  font-family: Roboto;
+  letter-spacing: -2%;
+}
+.caption_l {
+  font-size: 18px;
+  line-height: 24px;
+}
+@media (max-width: 1360px) {
+  .caption_l {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+.caption_m {
+  font-size: 16px;
+  line-height: 20px;
+}
+@media (max-width: 1360px) {
+  .caption_m {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+.caption_s {
+  font-size: 14px;
+  line-height: 18px;
+}
+@media (max-width: 1360px) {
+  .caption_s {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+.caption_light {
+  font-weight: 300;
+}
+.caption_regular {
+  font-weight: 400;
+}
+.caption_medium {
+  font-weight: 500;
+}
+.body {
+  font-family: Roboto;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+}
+.body_regular {
+  font-weight: 400;
+}
+.body_semibold {
+  font-weight: 600;
+}
+.body p+p {
+  margin-top: 8px;
+}
+.link {
+  letter-spacing: -0.02em;
+  font-size: 14px;
+  line-height: 18px;
+}
+.link:hover {
+  text-decoration: underline;
+}
+.link_big {
+  font-size: 24px;
+  line-height: 32px;
 }
 body {
   font-family: Roboto;
