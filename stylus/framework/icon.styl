@@ -1,0 +1,24 @@
+$normalIcons = (arrow-down arrow-right bookmark delete doc-icon download external-link eye-closed eye-opened hide-notification history more-horizontal notification pdf-icon qa search search-small seen settings)
+$hoverIcons = (bookmark delete download eye-closed eye-opened more-horizontal notification qa search settings)
+$activeIcons = (bookmark delete more-horizontal notification qa search)
+
+.service-icon:before
+  content ""
+  width 14px
+  height 14px
+  background-size contain
+
+for $icon in $normalIcons
+  .service-icon-{$icon}
+    &:before
+      background-image url(../img/icon/service/$icon/normal.svg)
+
+for $icon in $hoverIcons
+  .service-icon-{$icon}
+    &:hover:before
+      background-image url(../img/icon/service/$icon/hover.svg)
+
+for $icon in $activeIcons
+  .service-icon-{$icon}
+    &:active:before
+      background-image url(../img/icon/service/$icon/active.svg)
