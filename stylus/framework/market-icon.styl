@@ -1,12 +1,12 @@
 $marketIcons = (boots building calendar clothes lux profile)
 
 .market-icon
-  display inline-block
+  display block
   width 48px
   height 48px
   background-size contain
   background-position 50% 50%
-  &:disabled
+  &_disabled
     filter grayscale(100%)
   for $icon in $marketIcons
     &_{$icon}

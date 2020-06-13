@@ -22,6 +22,9 @@
   font-weight: 600;
   src: url("../fonts/Roboto-Semibold.ttf");
 }
+.d-none {
+  display: none;
+}
 .page {
   font-family: Roboto;
   font-size: 20px;
@@ -194,6 +197,8 @@ button {
 }
 .button_icon:before {
   content: "";
+  width: 14px;
+  height: 14px;
   position: absolute;
   top: 50%;
   right: 17px;
@@ -205,8 +210,6 @@ button {
 }
 .service-icon:before {
   content: "";
-  width: 14px;
-  height: 14px;
   background-size: contain;
 }
 .service-icon_arrow-down:before {
@@ -315,13 +318,13 @@ button {
   background-image: url("../img/icon/service/search/active.svg");
 }
 .market-icon {
-  display: inline-block;
+  display: block;
   width: 48px;
   height: 48px;
   background-size: contain;
   background-position: 50% 50%;
 }
-.market-icon:disabled {
+.market-icon_disabled {
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
 }
