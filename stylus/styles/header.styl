@@ -1,0 +1,38 @@
+.header
+  border-bottom 1px solid color-grey
+  height 60px
+  box-sizing border-box
+  background-color color-light-grey
+  padding 20px 28px
+  display flex
+  justify-content space-between
+  >div
+    display flex
+  &__link
+    line-height 20px
+  &__icon
+    position relative
+    width 20px
+    height 20px
+    margin-left 25px
+    display block
+    &_accent
+      &:after
+        position absolute
+        content ""
+        top 0
+        left 2px
+        box-sizing border-box
+        display block
+        width 6px
+        height 6px
+        border-radius 50%
+        background-color color-accent-active
+        border 1px solid black
+    &:before
+      left 50%
+      top 50%
+      transform translate(-50%,-50%)
+      height 20px
+      width 20px
+      position absolute
